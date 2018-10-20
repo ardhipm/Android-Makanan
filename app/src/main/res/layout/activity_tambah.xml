@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient1"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Makanan"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_asal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Asal Makanan"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_bahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bahan Makanan"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_kemasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kemasan Makanan"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_mitraukm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mitra UKM"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_kondisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kondisi Proses"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PH"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_aktivitasair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aktivitas Air"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AW"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_nilsterilitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nilai Sterilitas"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Menit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_kadair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kadar Air"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_kadabu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kadar Abu"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_protein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Protein"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_lemak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lemak"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_karbohidrat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Karbohidrat"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="%"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_energi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Energi"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kal/100g"/>
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_timbal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Timbal (Pb)"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_kadmium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kadmium (Cd)"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_tembaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tembaga (Cu)"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_seng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seng (Zn)"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_timah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Timah (Sn)"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_raksa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Raksa (Hg)"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/input_arsen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Arsen (As)"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_alt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ALT 30C, 72 jam"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Koloni/g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_aerob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bakteri Aerob Pembentuk Spora"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Koloni/g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_coliform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Coliform"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="APM/g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_salmonella"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Salmonella sp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="/25g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_saureus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="S.aureus"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="/g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_perfringens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="C.perfringens"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="/g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_anaerob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bakteri Anaerob Termofilik"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Koloni/g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_bacilius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bacilius Cereus"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Koloni/g"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_aflatoksin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aflatoksin B1"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="µg/kg"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/input_aflatoksintot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Aflatoksin Total"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    app:met_floatingLabel="highlight" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="µg/kg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/input_fraksilarut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fraksi Larut Kloroform"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    app:met_floatingLabel="highlight" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="mg/cm2"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/input_foto_produk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="URL foto produk"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/simpan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="submit"
+            android:background="#1dc2c2"
+            android:text="simpan"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/radioLemak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="lemak"
+            android:textSize="17sp"
+            android:text="Lemak" />
+
+        <RadioButton
+            android:id="@+id/radioKadarAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:hint="kadar_air"
+            android:text="Kadar Air" />
+
+        <RadioButton
+            android:id="@+id/radioKadarAbu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:hint="kadar_abu"
+            android:text="Kadar Abu" />
+
+        <RadioButton
+            android:id="@+id/radioProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:hint="protein"
+            android:text="Protein" />
+
+        <RadioButton
+            android:id="@+id/radioKarbohidrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:hint="karbohidrat"
+            android:text="Karbohidrat" />
+
+        <RadioButton
+            android:id="@+id/radioEnergi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:hint="energi"
+            android:text="Energi" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="30dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:text="Masukkan nilai interval :"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="Awal"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+
+            android:layout_marginRight="10dp"
+            android:id="@+id/edtAwal"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="Akhir"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edtAkhir"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:background="#1dc2c2"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="CARI"/>
+    </LinearLayout>
+</LinearLayout>

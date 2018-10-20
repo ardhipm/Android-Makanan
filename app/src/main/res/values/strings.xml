@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Makanan Tradisional Kemasan</string>
+    <string name="tidak_ditemukan">Pencarian tidak ditemukan, Apakah anda ingin menambahkan data?</string>
+    <string-array name="german_familienname">
+        <item>Daging sapi</item>
+        <item>Kluwek</item>
+        <item>Telur</item>
+        <item>Tahu</item>
+        <item>Bebek</item>
+        <item>Kacang Tolo Merah</item>
+        <item>Santan Kelapa</item>
+        <item>Bawang Merah</item>
+        <item>Kunyit</item>
+        <item>Nangka Muda</item>
+        <item>Telur Bebek</item>
+        <item>Kacang Tolo</item>
+        <item>Krecek</item>
+        <item>Daun Pepaya</item>
+        <item>Ikan Kayu Keumamah</item>
+        <item>Ikan Patin</item>
+        <item>Bumbu Pindang</item>
+        <item>Tempe</item>
+        <item>Nasi</item>
+        <item>Srundeng</item>
+        <item>Daging Cincang</item>
+        <item>Sambal</item>
+        <item>Ikan Tuna</item>
+        <item>Abon Sapi</item>
+        <item>Telur Ayam Dadar</item>
+        <item>Sosis Sapi</item>
+        <item>Daging Ayam Suwir</item>
+        <item>Cabai Merah</item>
+        <item>Bawang Putih</item>
+        <item>Kecap</item>
+        <item>Cabai Hijau</item>
+        <item>Sagu</item>
+        <item>Kanji</item>
+        <item>Daun Jeruk</item>
+        <item>Asam Kandis</item>
+    </string-array>
+</resources>
